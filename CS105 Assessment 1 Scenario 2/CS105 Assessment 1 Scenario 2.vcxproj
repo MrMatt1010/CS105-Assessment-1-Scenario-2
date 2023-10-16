@@ -129,16 +129,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="mage.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="priest.cpp" />
-    <ClCompile Include="warrior.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="mage.h" />
-    <ClInclude Include="player.h" />
-    <ClInclude Include="priest.h" />
-    <ClInclude Include="warrior.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
