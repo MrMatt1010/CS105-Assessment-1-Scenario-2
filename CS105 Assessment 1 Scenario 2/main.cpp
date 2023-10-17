@@ -24,7 +24,7 @@ std::string raceToString(Race race) {
     }
 };
 
-//This is the base class. 
+//This is the base class, There are two virtual functions here for the derived classes to overwrite when needed. 
 class Player {
 private:
     std::string name;
@@ -76,7 +76,7 @@ public:
         return "Player";
     }
 };
-//below are the derived classes for each class. 
+//below are the derived classes. 
 class Warrior : public Player {
 public:
     Warrior(std::string name, Race race)
@@ -126,8 +126,8 @@ std::cout << "******Character Creation******\n";
 std::cout << "" << std::endl;
 
     std::vector<Player*> players;
-    const int maxPlayers = 3; // Allow the creation of three characters
-    // This is the loop for creating the characters. 
+    const int maxPlayers = 3; // Allows the creation of three characters
+// This is the loop for creating the characters. 
     for (int i = 0; i < maxPlayers; ++i) {
         std::cout << "Create character " << (i + 1) << ":" << std::endl;
 
@@ -181,7 +181,7 @@ std::cout << "" << std::endl;
 
     }
 
-    // Print player details, including class and race
+// Prints player details, including class and race
     for (Player* player : players) {
         std::cout << "My name is " << player->getName() << ", I am a  " << raceToString(player->getRace()) << ", I am a  "
             << player->getClass() << ", and my attack is " << player->attack() << std::endl;
